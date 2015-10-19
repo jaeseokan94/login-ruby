@@ -1,0 +1,8 @@
+<%= render :partial => "home/pencil" %>
+<%=   @username %> 
+<%= @k.ip_address %>
+<% if session[:user_id].nil? %>
+<h2><a = href="/home/login">Go to Login page</a></h2>
+<% else %>
+<h2><a = href="/home/logout">Go to Logout page</a></h2>
+<% end %> 
